@@ -1,0 +1,20 @@
+---
+collections:
+  - name: ansible.posix
+  - name: community.crypto
+  - name: community.docker
+  - name: community.general
+
+roles:
+  - name: acme_sh
+    src: https://github.com/frozenfoxx/acme_sh
+    version: main
+  - name: andrewrothstein.k9s
+  - name: mealie
+    src: https://github.com/frozenfoxx/ansible-role-mealie
+    version: main
+  - name: geerlingguy.docker
+  - name: geerlingguy.nodejs
+  - name: lablabs.rke2
+  - name: r_pufky.pihole
+  - name: stefangweichinger.ansible_rclone

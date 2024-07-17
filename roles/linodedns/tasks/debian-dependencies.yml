@@ -1,0 +1,10 @@
+---
+- name: Ensure dependencies
+  ansible.builtin.apt:
+    pkg:
+      - curl
+      - jq
+  environment:
+    DEBIAN_FRONTEND: noninteractive
+  tags:
+    - linodedns

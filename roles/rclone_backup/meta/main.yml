@@ -1,0 +1,3 @@
+---
+dependencies:
+  - role: stefangweichinger.ansible_rclone

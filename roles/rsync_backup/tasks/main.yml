@@ -1,0 +1,22 @@
+---
+- name: Add directories
+  ansible.builtin.import_tasks: directories.yml
+  tags:
+    - rsync_backup
+
+- name: Install rsync
+  ansible.builtin.apt:
+    pkg:
+      - rsync
+  tags:
+    - rsync_backup
+
+- name: Add backup scripts
+  ansible.builtin.import_tasks: scripts.yml
+  tags:
+    - rsync_backup
+
+- name: Add cron jobs
+  ansible.builtin.import_tasks: cron.yml
+  tags:
+    - rsync_backup

@@ -1,0 +1,10 @@
+---
+- name: Add directories
+  ansible.builtin.import_tasks: directories.yml
+  tags:
+    - rclone_backup
+
+- name: Add backup scripts
+  ansible.builtin.import_tasks: scripts.yml
+  tags:
+    - rclone_backup
