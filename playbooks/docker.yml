@@ -1,0 +1,27 @@
+---
+- name: Install base packages
+  hosts:
+    - docker
+  become: true
+  become_user: root
+  tasks:
+    - name: Install network share packages
+      ansible.builtin.package:
+        name:
+          - cifs-utils
+          - nfs-common
+        state: present
+
+- name: Install roles
+  hosts:
+    - docker
+  become: true
+  become_user: root
+  roles:
+    - avahi
+    - python
+    - frozenfoxx.mounts
+    - geerlingguy.docker
+    - frozenfoxx.ctop
+    - frozenfoxx.task
+

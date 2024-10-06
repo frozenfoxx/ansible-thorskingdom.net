@@ -1,9 +1,0 @@
----
-all:
-  hosts:
-    docker-01:
-    host-01:
-
-docker:
-  hosts:
-    docker-01:

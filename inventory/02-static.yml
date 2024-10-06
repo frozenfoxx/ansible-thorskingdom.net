@@ -1,0 +1,9 @@
+---
+all:
+  hosts:
+    docker-1:
+    host-1:
+
+docker:
+  hosts:
+    docker-1:

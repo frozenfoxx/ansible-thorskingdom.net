@@ -10,8 +10,14 @@ roles:
     src: https://github.com/frozenfoxx/acme_sh
     version: main
   - name: andrewrothstein.k9s
-  - name: mealie
-    src: https://github.com/frozenfoxx/ansible-role-mealie
+  - name: frozenfoxx.ctop
+    src: https://github.com/frozenfoxx/ansible-role-ctop
+    version: main
+  - name: frozenfoxx.mounts
+    src: https://github.com/frozenfoxx/ansible-role-mounts
+    version: main
+  - name: frozenfoxx.task
+    src: https://github.com/frozenfoxx/ansible-role-task
     version: main
   - name: geerlingguy.docker
   - name: geerlingguy.nodejs
